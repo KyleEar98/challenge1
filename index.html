@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javscript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: our age in days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-2">
+        <h2>Challenge 2: cat generator</h2>
+        <button class="btn btn-success"id="cat-generator" onclick="generateCat()">Generate cat</button>
+
+        <div class="flex-box-container-2" id="flex-cat-gen">
+
+        </div>
+    </div>
+    
+
+    <div class="container-3">
+        <h2>challenge: rock paper scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="static/images/rock.jpg" height="150" width="150" onclick="rpsGame(this)">
+            <!-- this keyword means if i click on rock is passes rock img element in this case -->
+            <img id="paper" src="static/images/paper.jpg" height="150" width="150" onclick="rpsGame(this)">
+            <img id="scissors" src="static/images/scissors.jpg" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+    </div>
+</body>
+<script src="static/js/script.js"></script>
+</html>
